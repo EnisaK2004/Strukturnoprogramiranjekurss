@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Напиши програма каде што преку тастатура ќе може да се внесат два децимални броеви.
+// пронајдиго нивниот производ и провери дали нивниот производ е делив со бројот 7 или со бројот 13.
+// Резултатот отпечатиго нa екран.
+int  main()
+{
+
+    int  number1, number2;
+
+    scanf("%d", &number1);
+    scanf("%d", &number2);
+
+    int  result = number1* number2;
+
+    int isDevisableWhithseven =  result % 7 == 0;
+    int isDevisableWhithThirteen = result % 13 == 0;
+
+    printf("The result is %d ",isDevisableWhithseven || isDevisableWhithThirteen );
+
+
+
+
+  return 0;
+}
