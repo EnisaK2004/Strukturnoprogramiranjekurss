@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+// напиши програма каде што преку тастатура ќе може да се внесат два цели броеви.
+// пронајдиго збирот на броевите и провери дали збирот е парен број.
+// резултатот отпечатиго на екран
+
+
+int main()
+{
+  int number1,number2;
+
+  scanf("%d", &number1);
+  scanf("%d", &number2);
+
+  //1 for even number
+  //o for odd number
+
+  int result = number1 + number2;
+  int isEven =result %2 == 0;
+
+  printf("The number is even: %d ", isEven );
+
+    return 0;
+}
