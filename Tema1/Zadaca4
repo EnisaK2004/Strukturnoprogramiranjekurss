@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма каде што преку тастатура ќе може да се внесат три броеви(b,h,l)
+//Пронајдиго волуменот(v)според наведената формула и отпечатиго резултатот на екран.V=1/2 bhl
+int main()
+{
+    float b,h,l;
+
+    scanf("%f", &b);
+    scanf("%f", &h);
+    scanf("%f", &l);
+
+    float v =(b*h*l)*1/2;
+
+    printf("The result is: %f",v);
+    return 0;
+}
