@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+//Напиши програма каде што преку тастатура ќе може да се внесат два броеви(r,h)
+//Пронајдиго волуменот(V) и отпечатиго резултатот на екран.
+int main()
+{
+    float r,h;
+
+    scanf("%f", &r);
+    scanf("%f", &h);
+
+    float V =M_PI*pow(r,2)*h;
+
+    printf("The result is: %f", V);
+
+    return 0;
+}
