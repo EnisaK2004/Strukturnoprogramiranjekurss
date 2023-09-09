@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма каде што преку тастатура ќе може да се внесат три броеви(a,b,h)
+//Пронајдиа плоштината(A) според наведената формула и резултатот отпечатиго на екран.
+int main()
+{
+    float a,b,h;
+
+    scanf("%f",&a);
+    scanf("%f", &b);
+    scanf("%f",&h);
+
+    float A =(a+b)/2*h;
+
+    printf("The result is: %f", A);
+
+    return 0;
+}
