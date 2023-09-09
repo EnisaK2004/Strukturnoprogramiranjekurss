@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+//Напиши програма каде што преку тастатура ке може да се внесе еден број(s)
+//Пронајдиго (V) и резултатот отпечатиго на екран.
+int main()
+{
+    float s;
+
+    scanf("%f", &s);
+
+    float V=pow(s,3);
+
+    printf("The result is:%f", V);
+    return 0;
+}
