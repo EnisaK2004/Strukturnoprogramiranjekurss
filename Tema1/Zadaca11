@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+//Напиши програма каде што преку тастатура ќе може да се внеси еден број (r)
+//Пронајдиго V и резултатот отпачати го на екран.
+int main()
+{
+    float r;
+
+    scanf("%f", &r);
+
+    float V =(4/3)* (M_PI) * pow(r,3);
+
+    printf("The result is: %f", V);
+
+    return 0;
+}
