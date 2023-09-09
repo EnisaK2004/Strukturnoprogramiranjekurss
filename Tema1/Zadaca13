@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Напиши програма каде што преку тастатура ќе може да се внесат два броеви(b,h)
+//Пронајдиа плоштината(A) и резултатот отпечати го на екран.
+
+int main()
+{
+    float b,h;
+
+    scanf("%f", &b);
+    scanf("%f", &h);
+
+    float A =(b*h)/2;
+
+    printf("The result is: %f", A);
+
+    return 0;
+}
