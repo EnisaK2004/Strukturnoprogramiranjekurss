@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+//Напиши програма каде што преку тастатура ќе може да се внесат три броеви(a,b,c)
+//Да се пресмета изразот (y) и да се отпечати резултатот.
+int main()
+{
+    float a,b,x;
+
+    scanf("%f", &a);
+    scanf("%f", &b);
+    scanf("%f", &x);
+
+
+    double result= pow((pow(a,4)+(7*a)*(pow(b,3)*(pow(x,2)))),2)/sqrt(pow(x,a));
+
+    printf("The result is: %f", result);
+
+    return 0;
+}
