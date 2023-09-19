@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма која преку тастатура ќе овозможува да се внесат два променливи.
+//Доделија апсолутната разлика меѓѕ променливите а и b на променлива наречена absDif и прикажи го резултатот на екран.
+int main()
+{
+    int a,b;
+
+    scanf("%d", &a);
+    scanf("%d", &b);
+
+    int absDif;
+
+    (a > b)? (absDif=(a-b)):(absDif=(b-a));
+
+    printf("The absDif result is: %d", absDif);
+
+    return 0;
+}
