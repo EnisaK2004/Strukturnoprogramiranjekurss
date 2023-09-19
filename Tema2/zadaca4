@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма каде што преку тастатура ќе моше да внесиш два променливи х и у.
+//Доделија поголемата вредност од х или у на променлива наречена MaxValue и прикажи го резултатот на екран.
+int main()
+{
+    int  x,y;
+
+    scanf("%d", &x);
+    scanf("%d", &y);
+
+    int maxValue;
+
+    //Определиа најголемата вредност
+
+    (x > y)? (maxValue=x) : (maxValue=y);
+
+    //Прикажи го резултатот
+
+    printf("The maximum value is: %d",maxValue);
+
+    return 0;
+}
