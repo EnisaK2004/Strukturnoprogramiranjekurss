@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма каде што преку тастатура ке може да се внесат три цели броеви.
+//Да се отпчати на екран најмалиот од броевите-MAX %d.
+
+int main()
+{
+    int number1,number2,number3;
+
+    scanf("%d", &number1);
+    scanf("%d", &number2);
+    scanf("%d", &number3);
+
+    int min;
+
+    if(number1<number2 && number2<number3)
+    {
+        min=number1;
+    }
+    else if(number2<number1 && number2<number3)
+    {
+        min=number2;
+    }
+    else
+    {
+        min=number3;
+    }
+    printf("The min result %d",min);
+
+    return 0;
+}
