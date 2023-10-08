@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма каде што може да се внесат два цели броеви.
+//Да се отпечати на екран поголемиот од броевите.Бројот е %d поголем од бројот %d.
+int main()
+{
+    int number1,number2;
+
+    scanf("%d", &number1);
+    scanf("%d", &number2);
+
+    int max;
+
+    if(number1>number2)
+    {
+        max=number1;
+    }
+    else
+    {
+        max=number2;
+    }
+    printf("The max number is %d",max);
+
+    return 0;
+}
