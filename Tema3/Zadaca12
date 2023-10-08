@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма каде што може да се внесат два цели броеви.
+//Да се отпечати на екран помалиот од броевите.Бројот е %d помал од бројот %d.
+int main()
+{
+    int number1,number2;
+
+    scanf("%d", &number1);
+    scanf("%d", &number2);
+
+    int min;
+
+    if(number1<number2)
+    {
+        min=number1;
+    }
+    else
+    {
+        min=number2;
+    }
+    printf("The min number is %d",min);
+
+
+    return 0;
+}
