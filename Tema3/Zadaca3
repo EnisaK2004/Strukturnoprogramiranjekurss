@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Напиши програма каде што преку тастатура ќе може да се внесе еден цел број.
+//Провери дали бројот завршува на 9 ,ако завршѕва отпечати "Бројот %d завршува на 9"
+//или "Бројот %d не завршува на 9".
+int main()
+{
+    int number;
+
+    scanf("%d",&number);
+
+    if(number %10 == 9)
+    {
+        printf("The number  ends with 9 - %d",number);
+    }
+    else
+    {
+        printf("The number does not end with 9 - %d",number);
+    }
+
+    return 0;
+}
