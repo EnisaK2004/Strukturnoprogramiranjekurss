@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+//Напиши програма каде може да се внесе еден цел број.Ако бројот е парен да се
+//пресмета неговиот квадрат,во спротивно да се пресмета неговиот куб.
+//Резултатот да се отпечати на екран.
+
+int main()
+{
+    int number;
+
+    scanf("%d", &number);
+
+    double result;
+
+    if(number %2==0)
+    {
+        result = sqrt(number);
+    }
+    else
+    {
+        result = pow(number,2);
+    }
+
+    printf("The result is %.2f",result);
+
+    return 0;
+}
