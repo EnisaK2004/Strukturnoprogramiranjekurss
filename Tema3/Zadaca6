@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Напиши програма каде може да се внесе еден цел број.Провери дали бројот
+// е делив со 6 и завршува на цифрата 4.Соодветно да се отпечати "Бројот е %d
+//делив со 6 и завршува со 4" или "Бројот %d не е делив со 6 и не завршува со 4".
+int main()
+{
+    int number;
+
+    scanf("%d", &number);
+
+    if(number %6 == 0 && number %10 == 4)
+    {
+        printf("The number is divisible with 6 and ends with 4 - %d",number);
+    }
+    else
+    {
+        printf("The number is not divisible with 6 and does not end with 4 - %d",number);
+    }
+    return 0;
