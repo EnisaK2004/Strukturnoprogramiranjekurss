@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма каде што преку тастатура ќе може да внесиш еден цел број.
+//Програмата треба да провери дали бројот e делив со 61
+//и цоодветно треба да се отпечати "Бројот %d е делив со 61" или "Бројот %d не е делив со 61"
+
+int main()
+{
+    int number;
+
+    scanf("%d",&number);
+
+    if(number %61 == 0)
+    {
+        printf("The number is devisible with 61 - %d",number);
+    }
+
+    else
+    {
+        printf("The number is not divisible with 61 - %d",number);
+    }
+
+    return 0;
+}
