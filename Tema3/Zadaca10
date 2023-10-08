@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+//Напиши програма каде што може да се внесат два цели броеви.
+//Ако првиот број е делив со 8 или вториот број завршува на 4 да се пресмета нивната сума,
+//во спротивно да се пресмета сума од нивните квадрати.
+
+int main()
+{
+    int number1,number2;
+
+    scanf("%d", &number1);
+    scanf("%d", &number2);
+
+    double result;
+
+    if(number1 %8==0 || number2 %10==4)
+    {
+        result= number1 + number2;
+    }
+    else
+    {
+        result= pow(number1,2) + pow(number2,2);
+    }
+    printf("The result is %.2f",result);
+
+    return 0;
+}
