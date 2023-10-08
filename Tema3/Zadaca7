@@ -14,11 +14,11 @@ int main()
 
     if(number %2==0)
     {
-        result = sqrt(number);
+        result = pow(number,2);
     }
     else
     {
-        result = pow(number,2);
+        result = pow(number,3);
     }
 
     printf("The result is %.2f",result);
