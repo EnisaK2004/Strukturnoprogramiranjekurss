@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Напиши програма каде може да се внесе еден цел број.Провери дали бројот
+// е делив со 3 и завршува на цифрата 5.Соодветно да се отпечати "Бројот е %d
+//делив со 3 и завршува со 5" или "Бројот %d не е делив со  3 и не завршува со 5".
+int main()
+{
+    int number;
+
+    scanf("%d", &number);
+
+    if (number %3 == 0 && number %10 == 5)
+    {
+        printf("The number is divisible with 3 and ends with 5 - %d",number);
+    }
+    else
+    {
+        printf("The number is not devisible with 3 and does not end with 5 - %d",number);
+    }
+    return 0;
+}
