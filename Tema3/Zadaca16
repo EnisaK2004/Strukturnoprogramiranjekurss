@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Напиши програма каде што преку тастатура ќе може да се внесат четири цели броеви.
+//Да се отпечати на екран нај maliot од броевите.
+
+int main()
+{
+    int number1,number2,number3,number4;
+
+    scanf("%d", &number1);
+    scanf("%d", &number2);
+    scanf("%d", &number3);
+    scanf("%d", &number4);
+
+    int min;
+
+    if(number1<number2 && number1<number3 && number1<number4)
+    {
+        min=number1;
+    }
+    else if(number2<number1 && number2<number3 && number2<number4)
+    {
+        min=number2;
+    }
+    else if(number3<number1 && number3<number2 && number3<number4)
+    {
+        min=number3;
+    }
+    else
+    {
+        min=number4;
+    }
+    printf("The min number is %d",min);
+
+    return 0;
+}
