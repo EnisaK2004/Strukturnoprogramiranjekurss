@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+//Напиши програма каде што преку тастатура ќе може да се внесе еден цел број.
+//Провери дали бројот завршува на 25 ,ако завршѕва отпечати "Бројот %d завршува на 25"
+//или "Бројот %d не завршува на 25".
+
+int main()
+{
+    int number;
+
+    scanf("%d", &number);
+
+    if(number %100 == 25)
+    {
+        printf("The number ends with 25 - %d",number);
+    }
+    else
+    {
+        printf("The number does not end with 25 - %d",number);
+    }
+    return 0;
+}
